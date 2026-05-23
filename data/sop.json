@@ -1,0 +1,278 @@
+{
+  "business_name": "Bloom Aesthetics Clinic",
+  "tagline": "Mumbai's Premium Skin & Aesthetic Destination",
+  "location": {
+    "address": "Shop 4 & 5, Harmony Heights, Linking Road, Bandra West",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "pincode": "400050",
+    "landmark": "Opposite Bandra Gymkhana, next to HDFC Bank",
+    "google_maps": "https://maps.google.com/?q=Bloom+Aesthetics+Bandra+Mumbai"
+  },
+  "contact": {
+    "phone": "+91 98200 11223",
+    "whatsapp": "+91 98200 11223",
+    "email": "hello@bloomaesthetics.in",
+    "instagram": "@bloomaesthetics.mumbai"
+  },
+  "hours": {
+    "monday_to_saturday": "9:00 AM – 8:00 PM",
+    "sunday": "10:00 AM – 4:00 PM (Appointments Only)",
+    "public_holidays": "Closed"
+  },
+  "booking": {
+    "methods": ["WhatsApp", "Instagram DM", "Phone call", "Website"],
+    "advance_notice": "Book at least 24 hours in advance",
+    "cancellation_policy": "Cancellations must be made at least 24 hours before the appointment. Late cancellations may incur a ₹500 cancellation fee.",
+    "deposit": "A ₹500 booking deposit is required for all treatments above ₹3,000. This is adjusted against your final bill."
+  },
+  "services": {
+    "skin_treatments": {
+      "category_name": "Skin Treatments",
+      "items": [
+        {
+          "name": "HydraFacial",
+          "description": "Deep cleansing, hydration and glow treatment using HydraFacial MD machine",
+          "duration": "60 minutes",
+          "price_inr": 3500,
+          "session_packages": {
+            "3_sessions": 9500,
+            "6_sessions": 18000
+          }
+        },
+        {
+          "name": "Chemical Peel",
+          "description": "Medical-grade peels for pigmentation, acne scars and skin texture",
+          "duration": "30–45 minutes",
+          "price_inr": 2000,
+          "variants": {
+            "Glycolic Peel": 2000,
+            "Salicylic Peel": 2000,
+            "TCA Peel": 3500,
+            "Yellow Peel": 4500
+          }
+        },
+        {
+          "name": "Microneedling (Dermaroller / RF)",
+          "description": "Collagen induction therapy for acne scars, fine lines and skin tightening",
+          "duration": "45–60 minutes",
+          "price_inr": 4500,
+          "session_packages": {
+            "3_sessions": 12000,
+            "6_sessions": 22000
+          }
+        },
+        {
+          "name": "Laser Skin Brightening",
+          "description": "Q-Switch Nd:YAG laser for pigmentation, melasma and uneven skin tone",
+          "duration": "30 minutes",
+          "price_inr": 3000,
+          "session_packages": {
+            "4_sessions": 10000
+          }
+        },
+        {
+          "name": "Acne Treatment Package",
+          "description": "Customised plan including peels, LED therapy and extractions",
+          "duration": "60 minutes per session",
+          "price_inr": 2500,
+          "session_packages": {
+            "4_sessions": 8500
+          }
+        }
+      ]
+    },
+    "injectables": {
+      "category_name": "Injectables & Fillers",
+      "items": [
+        {
+          "name": "Botox (Botulinum Toxin)",
+          "description": "FDA-approved treatment for forehead lines, crow's feet and frown lines",
+          "duration": "20–30 minutes",
+          "price_inr": "Starting from ₹8,000 per area",
+          "popular_areas": {
+            "Forehead": 8000,
+            "Crow's Feet": 8000,
+            "Frown Lines (Glabella)": 8000,
+            "Bunny Lines": 6000,
+            "Lip Flip": 6000,
+            "Jaw Slimming (Masseter)": 18000,
+            "Hyperhidrosis (Underarm)": 20000
+          }
+        },
+        {
+          "name": "Dermal Fillers (Hyaluronic Acid)",
+          "description": "Volume restoration and contouring for lips, cheeks, jawline and under eyes",
+          "duration": "30–45 minutes",
+          "price_inr": "Starting from ₹18,000 per syringe",
+          "popular_areas": {
+            "Lip Enhancement": 18000,
+            "Cheek Augmentation": 22000,
+            "Jawline Definition": 22000,
+            "Under Eye (Tear Trough)": 25000,
+            "Nose Reshaping (Non-surgical)": 25000,
+            "Chin Augmentation": 20000
+          }
+        },
+        {
+          "name": "Skin Booster (Profhilo / Juvederm Volite)",
+          "description": "Bio-remodelling injectable for skin hydration and elasticity",
+          "duration": "30 minutes",
+          "price_inr": 22000,
+          "note": "2-session protocol recommended, 1 month apart"
+        },
+        {
+          "name": "PRP (Platelet Rich Plasma) — Hair & Face",
+          "description": "Growth factor therapy using your own blood plasma",
+          "duration": "60 minutes",
+          "price_inr": {
+            "Face PRP": 5000,
+            "Hair PRP": 5000,
+            "Face + Hair PRP": 8500
+          },
+          "session_packages": {
+            "4_sessions_face": 16000,
+            "4_sessions_hair": 16000
+          }
+        }
+      ]
+    },
+    "laser_treatments": {
+      "category_name": "Laser Hair Removal",
+      "technology": "Diode Laser (FDA Approved)",
+      "note": "Minimum 6–8 sessions recommended for permanent hair reduction",
+      "items": [
+        { "area": "Upper Lip", "price_per_session": 800, "package_6": 4000 },
+        { "area": "Chin", "price_per_session": 800, "package_6": 4000 },
+        { "area": "Full Face", "price_per_session": 2500, "package_6": 12000 },
+        { "area": "Underarms", "price_per_session": 1500, "package_6": 7500 },
+        { "area": "Bikini Line", "price_per_session": 2000, "package_6": 10000 },
+        { "area": "Half Legs", "price_per_session": 3000, "package_6": 15000 },
+        { "area": "Full Legs", "price_per_session": 5000, "package_6": 25000 },
+        { "area": "Full Arms", "price_per_session": 3500, "package_6": 18000 },
+        { "area": "Full Body (excluding face)", "price_per_session": 12000, "package_6": 60000 }
+      ]
+    },
+    "hair_treatments": {
+      "category_name": "Hair Treatments",
+      "items": [
+        {
+          "name": "Hair Loss Consultation + Trichoscopy",
+          "price_inr": 1000,
+          "note": "Amount adjusted against treatment"
+        },
+        {
+          "name": "Mesotherapy for Hair",
+          "description": "Microinjections of vitamins and growth factors for hair fall control",
+          "duration": "45 minutes",
+          "price_per_session": 4000,
+          "session_packages": { "6_sessions": 20000 }
+        },
+        {
+          "name": "GFC (Growth Factor Concentrate) Hair Treatment",
+          "description": "Next-gen hair rejuvenation, superior to standard PRP",
+          "duration": "60 minutes",
+          "price_per_session": 7000,
+          "session_packages": { "4_sessions": 24000 }
+        }
+      ]
+    },
+    "body_treatments": {
+      "category_name": "Body Contouring",
+      "items": [
+        {
+          "name": "Cryolipolysis (Fat Freezing)",
+          "description": "Non-surgical fat reduction for abdomen, flanks, thighs and arms",
+          "duration": "60 minutes per applicator",
+          "price_per_applicator": 8000,
+          "package": { "4_applicators": 28000 }
+        },
+        {
+          "name": "RF Body Tightening",
+          "description": "Radiofrequency for skin laxity and cellulite reduction",
+          "duration": "45 minutes",
+          "price_per_session": 3500,
+          "session_packages": { "6_sessions": 18000 }
+        },
+        {
+          "name": "Carbon Laser Peel (Hollywood Peel)",
+          "description": "Instant glow treatment, zero downtime, popular pre-event",
+          "duration": "30 minutes",
+          "price_inr": 3000,
+          "session_packages": { "4_sessions": 10000 }
+        }
+      ]
+    },
+    "consultation": {
+      "name": "Doctor Consultation",
+      "price_inr": 1000,
+      "note": "Consultation fee is waived if treatment is taken on the same day. Video consultations available at ₹500."
+    }
+  },
+  "team": {
+    "lead_doctor": "Dr. Priya Nair, MBBS, MD (Dermatology), Fellowship in Aesthetic Medicine",
+    "experience": "12+ years in clinical dermatology and aesthetics",
+    "certifications": "IADVL Member, Trained at AMWC Monaco, Allergan Diamond Provider"
+  },
+  "policies": {
+    "age_requirement": "All injectable treatments require patients to be 18 years or older. A valid ID must be presented.",
+    "pregnancy": "Most aesthetic treatments are contraindicated during pregnancy and breastfeeding. Please inform us if you are pregnant.",
+    "results": "Results vary per individual. We recommend a consultation to set realistic expectations.",
+    "photos": "Before and after photos are taken for clinical records with patient consent.",
+    "payment_methods": ["Cash", "UPI (GPay, PhonePe, Paytm)", "Credit / Debit Card", "EMI available on treatments above ₹10,000 via Bajaj Finserv"]
+  },
+  "common_faqs": {
+    "pain_and_comfort": {
+      "laser_hair_removal": "Laser hair removal feels like a quick rubber band snap on the skin. Most clients find it very tolerable. We apply a cooling gel before the session to minimise discomfort. Pain level is typically 2–3 out of 10.",
+      "botox": "Botox injections use a very fine needle and feel like a tiny pinch lasting 1–2 seconds. Most clients find it painless. No anaesthesia is needed.",
+      "fillers": "Dermal fillers are injected using a fine needle or cannula. A topical numbing cream is applied 20–30 minutes before to minimise discomfort. Most clients rate it 3–4 out of 10.",
+      "hydrafacial": "HydraFacial is completely painless and non-invasive. It feels like a gentle vacuum massage on the skin. No downtime.",
+      "chemical_peel": "Chemical peels cause a mild tingling or warm sensation during the treatment. Superficial peels have no downtime. Deeper peels (like TCA) may cause 3–5 days of peeling.",
+      "microneedling": "Microneedling uses a numbing cream applied 30–45 minutes before the session. During the procedure, most clients feel a mild pressure. Redness for 24–48 hours post-treatment is normal.",
+      "prp_gfc": "PRP and GFC involve a blood draw (like a routine blood test) and micro-injections. A numbing cream is used. Mild scalp soreness for 24 hours after hair PRP is normal.",
+      "fat_freezing": "Fat freezing (Cryolipolysis) involves a pulling/suction sensation and intense cold for the first 5–10 minutes, which then goes numb. Most clients read or use their phone during the session. No downtime."
+    },
+    "downtime": {
+      "botox": "No downtime. You can resume daily activities immediately. Avoid strenuous exercise, alcohol, and lying flat for 4 hours post-treatment.",
+      "fillers": "Minimal downtime. Mild swelling or bruising for 2–5 days is normal. Avoid heat and exercise for 24 hours.",
+      "laser_hair_removal": "No downtime. Mild redness for 1–2 hours is normal. Avoid sun exposure and hot showers for 24 hours.",
+      "hydrafacial": "Zero downtime. Skin looks instantly refreshed and glowy.",
+      "chemical_peel_superficial": "No downtime. Mild dryness for 2–3 days.",
+      "chemical_peel_tca": "3–5 days of visible skin peeling. Plan accordingly before events.",
+      "microneedling": "24–48 hours of redness (like mild sunburn). Avoid makeup for 24 hours.",
+      "fat_freezing": "No downtime. Area may feel sore for 2–3 days."
+    },
+    "results": {
+      "botox": "Results visible in 3–7 days, full effect at 2 weeks. Lasts 3–6 months depending on the individual.",
+      "fillers": "Results are immediate. Lasts 12–18 months depending on the area and filler used.",
+      "laser_hair_removal": "Each session reduces hair by 15–25%. Significant reduction visible after 3–4 sessions. Near-permanent results after 6–8 sessions.",
+      "hydrafacial": "Skin looks brighter and more hydrated immediately after. Cumulative benefits with monthly sessions.",
+      "prp_hair": "Hair fall reduction noticeable after 3 sessions. New hair growth visible around 3–6 months.",
+      "fat_freezing": "Fat reduction visible in 4–12 weeks as the body naturally eliminates frozen fat cells. Best results after 2–3 sessions."
+    },
+    "sessions_needed": {
+      "laser_hair_removal": "6–8 sessions for permanent hair reduction, spaced 4–6 weeks apart.",
+      "botox": "Single session, repeated every 3–6 months to maintain results.",
+      "fillers": "Single session per area. Top-up at 12–18 months.",
+      "hydrafacial": "One session gives instant results. Monthly sessions recommended for best skin health.",
+      "chemical_peel": "3–6 sessions depending on the concern (acne scars, pigmentation).",
+      "prp_hair": "4 sessions, 1 month apart, then maintenance every 6 months.",
+      "microneedling": "3–6 sessions, 4 weeks apart.",
+      "fat_freezing": "1–3 sessions per area depending on fat volume."
+    },
+    "preparation": {
+      "laser_hair_removal": "Shave the area 24 hours before. Avoid waxing or threading for 4 weeks before. No sun exposure or tanning for 2 weeks before.",
+      "botox_fillers": "Avoid blood thinners (aspirin, alcohol) for 3–5 days before. Come with a clean face.",
+      "hydrafacial": "No special preparation needed. Avoid retinol for 48 hours before.",
+      "chemical_peel": "Stop retinol and AHAs for 5–7 days before. Use SPF daily in the weeks leading up."
+    }
+  },
+  "escalation_conditions": [
+    "Customer has a complaint about a previous treatment outcome",
+    "Customer asks about a specific medical condition, allergy, or medication interaction (e.g. 'I'm diabetic, can I do this?', 'I'm on blood thinners')",
+    "Customer reports an adverse reaction, emergency, or unexpected side effect from a recent treatment",
+    "Customer is attempting to negotiate prices below the listed rates",
+    "Customer explicitly asks to speak to the doctor or a human staff member",
+    "More than 2 questions in a row could not be answered from this SOP"
+  ]
+}
