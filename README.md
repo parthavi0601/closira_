@@ -15,9 +15,7 @@ The workflow handles customer conversations end-to-end across four stages:
 | **2. Escalation Detection** | Two-layer check — detects complaints, anger, medical questions, pricing negotiation, out-of-scope queries. Logs every event. |
 | **3. Appointment Booking** | Asks for Name, Phone, Date/Time, and Service to book an appointment once the user shows intent. Stores answers in state. |
 | **4. Session Summary & Logging** | Logs booking details to `data/bookings.csv`, generates a structured handoff summary, and saves the summary to `logs/summaries.md`. |
-| **5. Admin Dashboard** | A dedicated UI tab for clinic staff to explicitly monitor escalations, out-of-SOP questions, and view all historical session summaries from the backend logs. |
 
----
 
 ## Architecture
 
