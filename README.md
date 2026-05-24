@@ -1,11 +1,11 @@
-# 🌸 Closira — AI Customer Support Workflow
+# Closira — AI Customer Support Workflow
 
-> **Built for Bloom Aesthetics Clinic, Bandra West, Mumbai**
+
 > An AI-powered customer support agent that handles inbound enquiries, qualifies leads, detects escalations, and summarises sessions — built with LangGraph, LangChain, GPT-4o-mini, and Gradio.
 
 ---
 
-## 📋 What This Does
+## What This Does
 
 The workflow handles customer conversations end-to-end across four stages:
 
@@ -19,7 +19,7 @@ The workflow handles customer conversations end-to-end across four stages:
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 User Message
@@ -88,7 +88,7 @@ closira/
 
 ---
 
-## 🏥 SOP — Bloom Aesthetics Clinic
+## SOP — Bloom Aesthetics Clinic
 
 The AI operates exclusively from `data/sop.json`. Key details:
 
@@ -147,7 +147,7 @@ The AI operates exclusively from `data/sop.json`. Key details:
 
 ---
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
 ### Prerequisites
 - Python 3.10 or higher
@@ -190,7 +190,7 @@ OPENAI_API_KEY=sk-your-openai-api-key-here
 
 ---
 
-## 🚀 Running the Application
+## Running the Application
 
 ### Option A — Gradio Web UI (recommended)
 
@@ -210,7 +210,7 @@ Type your messages and press Enter. Type `quit` to end the session.
 
 ---
 
-## 🧪 Testing the Workflow
+## Testing the Workflow
 
 Try these messages to exercise all four stages:
 
@@ -226,7 +226,7 @@ Try these messages to exercise all four stages:
 
 ---
 
-## 📊 Workflow State
+## Workflow State
 
 Every conversation maintains a `ConversationState` TypedDict with these fields:
 
@@ -245,7 +245,7 @@ Every conversation maintains a `ConversationState` TypedDict with these fields:
 
 ---
 
-## 📁 Backend Logging & Admin Dashboard
+## Backend Logging & Admin Dashboard
 
 All critical system events are logged to the backend file system and can be explicitly viewed in the **Admin Dashboard & Logs** tab in the Gradio UI:
 
@@ -255,7 +255,7 @@ All critical system events are logged to the backend file system and can be expl
 
 ---
 
-## ⚖️ Trade-offs & Known Limitations
+## Trade-offs & Known Limitations
 
 | Item | Detail |
 |------|--------|
@@ -268,7 +268,7 @@ All critical system events are logged to the backend file system and can be expl
 
 ---
 
-## 📦 Dependencies
+## Dependencies
 
 ```
 langgraph>=0.2.0
@@ -279,6 +279,4 @@ python-dotenv>=1.0.0
 pydantic>=2.0.0
 ```
 
----
 
-*Built by [Your Name] · Closira AI Engineering Internship Assignment*
