@@ -43,3 +43,48 @@
 - The clinic team should review the flagged inquiry and follow up with the customer to provide clarity on the lack of rhinoplasty services and potentially suggest alternative services that may meet their needs.
 
 ---
+
+## Session Summary (2026-05-24 15:03:16)
+
+**1. Customer Intent**
+- The customer, Parthavi Gaikwad, was inquiring about the prices for Botox treatments and expressed interest in booking an appointment for forehead Botox.
+
+**2. Key Details Collected**
+- Customer Name: Parthavi Gaikwad
+- Phone Number: 8374772364
+- Appointment Date and Time: May 30, 2023, at 4 PM
+- Service Requested: Forehead Botox
+
+**3. Escalation**
+- There was no escalation during this session. The customer did not express any complaints or require further assistance beyond the booking.
+
+**4. SOP Gaps**
+- No questions were asked that the SOP could not answer.
+
+**5. Recommended Next Action**
+- Confirm the appointment for Parthavi Gaikwad for forehead Botox on May 30, 2023, at 4 PM.
+- Ensure that the booking deposit of ₹500 is collected, as the treatment exceeds ₹3,000.
+- Update the appointment details in the clinic's scheduling system and prepare for the customer's visit.
+
+---
+
+## Session Summary (2026-05-24 15:22:50)
+
+**1. Customer Intent**  
+The customer was inquiring about the prices of waxing services.
+
+**2. Key Details Collected**  
+- No specific qualification data was collected as the inquiry was straightforward.
+
+**3. Escalation**  
+- Yes, there was an escalation.  
+- Trigger: The customer asked about waxing services, which are not offered by the clinic.  
+- Action Taken: The assistant flagged the inquiry for the team to follow up with the customer.
+
+**4. SOP Gaps**  
+- The SOP does not provide information on waxing services, as they are not part of the clinic's offerings.
+
+**5. Recommended Next Action**  
+- The clinic team should follow up with the customer to inform them that waxing services are not available and offer alternative services that may meet their needs. Additionally, consider updating the FAQ section to clarify the absence of waxing services.
+
+---
