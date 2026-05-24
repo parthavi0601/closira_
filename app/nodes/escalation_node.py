@@ -10,29 +10,26 @@ llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
 
 
 def escalation_node(state: ConversationState) -> ConversationState:
-    # If the session was already escalated in a previous turn, we don't need to re-escalate
-    # or run the LLM check again. We just silently keep the stage as "escalated" to bypass qualification.
-    if state.get("had_escalation"):
-        return {
-            **state,
-            "escalated": False,
-            "current_stage": "escalated",
-        }
-
+    # ── Layer 1: FAQ node already flagged this turn for escalation ──────────────
+    # The FAQ has already replied with the escalation phrase — just log it and
+    # route to end. Do NOT append another message (that would duplicate the reply).
     if state.get("escalated"):
         reason = state.get("escalation_reason", "Unknown")
-        log_escalation(reason, get_conversation_text(state["messages"]))
-        escalation_message = (
-            "I'm sorry to hear that. I've flagged this for our team and someone will follow up "
-            "with you shortly. In the meantime, feel free to ask me anything else I can help with!"
-        )
-        updated_messages = state["messages"] + [{"role": "assistant", "content": escalation_message}]
+        log_escalation(reason, get_last_user_message(state["messages"]))
+        # Infer sentiment from the escalation phrase used
+        last_faq = state.get("faq_response", "") or ""
+        if "cannot provide medical advice" in last_faq.lower():
+            inferred_sentiment = "curious"
+        elif "flagged this for our team" in last_faq.lower():
+            inferred_sentiment = "disappointed"
+        else:
+            inferred_sentiment = "neutral"
         return {
             **state,
-            "messages": updated_messages,
             "had_escalation": True,
             "escalated": False,
             "current_stage": "escalated",
+            "sentiment": inferred_sentiment,
         }
 
     sop = state["sop"]
@@ -57,12 +54,14 @@ def escalation_node(state: ConversationState) -> ConversationState:
         result = json.loads(raw)
         escalate = result.get("escalate", False)
         reason = result.get("reason", None)
+        sentiment = result.get("sentiment", "neutral")
     except Exception:
         escalate = False
         reason = None
+        sentiment = "neutral"
 
     if escalate:
-        log_escalation(reason or "Detected by escalation node", conversation)
+        log_escalation(reason or "Detected by escalation node", user_message)
         escalation_message = (
             "I completely understand your concern. I've flagged this for our team — "
             "someone will be in touch with you very soon. "
@@ -76,6 +75,13 @@ def escalation_node(state: ConversationState) -> ConversationState:
             "escalated": False,
             "escalation_reason": reason,
             "current_stage": "escalated",
+            "sentiment": sentiment,
         }
 
-    return {**state, "escalated": False, "current_stage": "qualification"}
+    # ── No escalation detected this turn ────────────────────────────────────────
+    # If a prior turn had an escalation, keep the stage as "escalated" so the
+    # router continues to end the turn instead of jumping to qualification.
+    if state.get("had_escalation"):
+        return {**state, "escalated": False, "current_stage": "escalated", "sentiment": sentiment}
+
+    return {**state, "escalated": False, "current_stage": "qualification", "sentiment": sentiment}

@@ -24,11 +24,16 @@ def faq_node(state: ConversationState) -> ConversationState:
     ])
 
     reply = response.content.strip()
-    escalate_flag = "ESCALATE: true" in reply
-    clean_reply = reply.replace("ESCALATE: true", "").replace("ESCALATE: false", "").strip()
 
+    # Detect escalation via the explicit [ESCALATE] token only.
+    # This avoids false positives from natural-language phrases like
+    # "our team will reach out" that can appear in normal answers.
+    escalate_flag = "[ESCALATE]" in reply
+    clean_reply = reply.replace("[ESCALATE]", "").strip()
+
+    # Count turns where the SOP couldn't answer
     unanswered_count = state["unanswered_count"]
-    if "don't have that information" in clean_reply.lower() or "connect you with our team" in clean_reply.lower():
+    if escalate_flag:
         unanswered_count += 1
 
     updated_messages = state["messages"] + [{"role": "assistant", "content": clean_reply}]
@@ -40,5 +45,5 @@ def faq_node(state: ConversationState) -> ConversationState:
         "unanswered_count": unanswered_count,
         "current_stage": "faq",
         "escalated": escalate_flag,
-        "escalation_reason": "FAQ could not answer or detected escalation trigger" if escalate_flag else state.get("escalation_reason"),
+        "escalation_reason": "FAQ triggered predefined escalation rule" if escalate_flag else state.get("escalation_reason"),
     }

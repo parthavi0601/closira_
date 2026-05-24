@@ -16,3 +16,4 @@ class ConversationState(TypedDict):
     faq_response: Optional[str]
     summary: Optional[str]
     turn_count: int
+    sentiment: Optional[str]  # happy | curious | neutral | disappointed | sad | angry

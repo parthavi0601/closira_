@@ -296,3 +296,85 @@ Assistant: Botox treatments at Bloom Aesthetics Clinic are performed by our lead
 2026-05-24 15:22:42 | ESCALATION | Reason: FAQ could not answer or detected escalation trigger | Context: User: i want to know prices of waxing
 Assistant: We currently do not offer any of these services but I've flagged this for our team and someone will follow up with you shortly. In the meantime, feel f
 2026-05-24 15:22:50 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 15:38:26 | HTTP Request: HEAD https://huggingface.co/api/telemetry/https%3A/api.gradio.app/gradio-initiated-analytics "HTTP/1.1 200 OK"
+2026-05-24 15:38:26 | HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-05-24 15:38:28 | HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2026-05-24 15:38:30 | HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2026-05-24 15:38:30 | HTTP Request: HEAD https://huggingface.co/api/telemetry/https%3A/api.gradio.app/gradio-launched-telemetry "HTTP/1.1 200 OK"
+2026-05-24 15:42:33 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 15:42:34 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 15:42:37 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 15:44:37 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 15:44:37 | ESCALATION | Reason: FAQ could not answer or detected escalation trigger | Context: User: what all services do you offer
+Assistant: At Bloom Aesthetics Clinic, we offer a variety of services, including:
+
+1. **Consultation**: \u20b91000 (waived if treatment is taken on the same day).
+
+2. *
+2026-05-24 15:54:06 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 17:26:38 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 17:35:58 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 17:37:10 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 17:37:12 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 17:37:14 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 17:37:41 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 17:37:41 | ESCALATION | Reason: FAQ could not answer or detected escalation trigger | Context: User: What are the botox prices
+Assistant: The prices for Botox (Botulinum Toxin) at Bloom Aesthetics Clinic are as follows:
+
+- Forehead: \u20b98,000
+- Crow's Feet: \u20b98,000
+- Frown Lines (Glabella): \u20b98,000
+
+2026-05-24 17:38:13 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 17:39:13 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 17:44:39 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 17:44:50 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 17:46:12 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 17:46:14 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 17:46:15 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 17:46:40 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 17:46:40 | ESCALATION | Reason: FAQ could not answer or detected escalation trigger | Context: User: what are your botox prices
+Assistant: Our Botox prices start from \u20b98,000 per area. Here are the specific prices for different areas:
+
+- Forehead: \u20b98,000
+- Crow's Feet: \u20b98,000
+- Frown Lines (Glab
+2026-05-24 17:47:01 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 17:47:01 | ESCALATION | Reason: FAQ could not answer or detected escalation trigger | Context: User: what are your botox prices
+Assistant: Our Botox prices start from \u20b98,000 per area. Here are the specific prices for different areas:
+
+- Forehead: \u20b98,000
+- Crow's Feet: \u20b98,000
+- Frown Lines (Glab
+2026-05-24 17:51:48 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 17:52:11 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 17:52:11 | ESCALATION | Reason: FAQ could not answer the question | Context: User: I'm really unhappy with the last visit, I got breakouts
+Assistant: I'm really sorry to hear that. I've flagged this for our team � someone will follow up with you shortly. In the meantime, pleas
+2026-05-24 17:58:02 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 17:58:23 | ESCALATION | Reason: FAQ could not answer the question | Context: User: I am really unhappy with my last visit i got breakouts
+Assistant: I'm really sorry to hear that. I've flagged this for our team — someone will follow up with you shortly. In the meantime, please
+2026-05-24 18:01:43 | ESCALATION | Reason: FAQ could not answer the question | Context: User: i am really unhappy with my last visit i got breakouts
+Assistant: I'm really sorry to hear that. I've flagged this for our team — someone will follow up with you shortly. In the meantime, please
+2026-05-24 18:02:00 | ESCALATION | Reason: The customer expressed dissatisfaction with their last visit and mentioned breakouts. | Context: User: i am really unhappy with my last visit i got breakouts
+Assistant: I'm really sorry to hear that. I've flagged this for our team — someone will follow up with you shortly. In the meantime, please
+2026-05-24 18:05:10 | ESCALATION | Reason: FAQ could not answer the question | Context: User: what is the botox prices
+Assistant: The prices for Botox (Botulinum Toxin) at Bloom Aesthetics Clinic are as follows:
+
+- Forehead: ₹8,000
+- Crow's Feet: ₹8,000
+- Frown Lines (Glabella): ₹8,000
+-
+2026-05-24 18:09:58 | ESCALATION | Reason: FAQ could not answer the question | Context: User: what are the botox prices
+Assistant: Here are the Botox prices at Bloom Aesthetics Clinic:
+
+- Forehead: ₹8,000
+- Crow's Feet: ₹8,000
+- Frown Lines (Glabella): ₹8,000
+- Bunny Lines: ₹6,000
+- Lip 
+2026-05-24 18:15:26 | ESCALATION | Reason: FAQ triggered predefined escalation rule | Context: i am really unhappy with my last visit i got breakouts
+2026-05-24 18:15:55 | ESCALATION | Reason: FAQ triggered predefined escalation rule | Context: Do you do rhinoplasty surgery
+2026-05-24 18:20:28 | ESCALATION | Reason: FAQ triggered predefined escalation rule | Context: Do you offer rhinoplasty surgery
+2026-05-24 18:21:01 | ESCALATION | Reason: FAQ triggered predefined escalation rule | Context: I am really unhappy with my last visit i got breakouts from the facial
+2026-05-24 18:23:46 | ESCALATION | Reason: FAQ triggered predefined escalation rule | Context: Do you offer rhinoplasty surgery
+2026-05-24 18:24:18 | ESCALATION | Reason: FAQ triggered predefined escalation rule | Context: I'm really unhappy with my last visit i got breakouts

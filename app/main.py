@@ -37,6 +37,7 @@ INITIAL_STATE = {
     "summary": None,
     "turn_count": 0,
     "last_activity": time.time(),
+    "sentiment": None,
 }
 
 
@@ -85,6 +86,7 @@ def print_system(message: str):
 def typing_effect():
     with console.status("[bold magenta]Assistant is typing...[/bold magenta]"):
         time.sleep(1)
+
 
 
 def main():
